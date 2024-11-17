@@ -4,12 +4,14 @@
   "description": "Project for CIS623",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsx main.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SvenArcticFox/CIS623-Project.git"
   },
+  "type": "module",
   "author": "Trevor Radez",
   "license": "MIT",
   "bugs": {
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/SvenArcticFox/CIS623-Project#readme",
   "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   }
 }
