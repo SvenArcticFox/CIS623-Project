@@ -19,5 +19,7 @@ function multiply(i: number, j: number): number {
 }
 
 const addedNumbersFoldr = foldr(add, testArr1, 0);
-console.log(`Addition of added numbers: ${addedNumbersFoldr}`);
+console.log(`Addition of added numbers using foldr: ${addedNumbersFoldr}`);
 
+const addedNumberFoldl = foldl(add, testArr1, 0);
+console.log(`Addition of added numbers using foldl: ${addedNumberFoldl}`);
