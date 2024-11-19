@@ -32,7 +32,7 @@ console.log(`Multiplicaion of numbers using foldl: ${multipliedNumbersFoldl}`);
 
 const reverseFoldr = <t>(arr: Array<t>): Array<t> => {
     return foldr<t, Array<t>>((value: t, accumulator: Array<t>): Array<t> => {
-        const acc = accumulator;
+        const acc = accumulator.slice();
         acc.push(value);
         return acc;
     }, arr, new Array<t>);
@@ -41,9 +41,12 @@ const reverseFoldr = <t>(arr: Array<t>): Array<t> => {
 const reverseArrFoldr = reverseFoldr<number>(testArr1);
 console.log(`Reverse numbers using foldr: ${reverseArrFoldr}`);
 
+const reversArr2Foldr = reverseFoldr<string>(testArr2);
+console.log(`Reverse char array (string) using foldr: ${reversArr2Foldr}`);
+
 const reverseFoldl = <t>(arr: Array<t>): Array<t> => {
     return foldl<t, Array<t>>((value: t, accumulator: Array<t>): Array<t> => {
-        const acc = accumulator;
+        const acc = accumulator.slice();
         acc.unshift(value);
         return acc;
     }, arr, new Array<t>);
@@ -52,10 +55,7 @@ const reverseFoldl = <t>(arr: Array<t>): Array<t> => {
 const reversArrFoldl = reverseFoldl<number>(testArr1);
 console.log(`Reverse numbers using foldl: ${reversArrFoldl}`);
 
-const reversArr2Foldr = reverseFoldr<string>(testArr2);
-console.log(`Reverse char array (string) using foldr: ${reversArr2Foldr}`);
-
 const reversArr2Foldl = reverseFoldl<string>(testArr2);
-console.log(`Reverse char array (string) using foldr: ${reversArr2Foldl}`);
+console.log(`Reverse char array (string) using foldl: ${reversArr2Foldl}`);
 
 console.log('');
