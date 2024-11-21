@@ -30,6 +30,7 @@ console.log(`Multiplication of numbers using foldr: ${multipliedNumbersFoldr}`);
 const multipliedNumbersFoldl = foldl<number, number>(multiply, testArr1, 1);
 console.log(`Multiplicaion of numbers using foldl: ${multipliedNumbersFoldl}`);
 
+// reverse functions
 const reverseFoldr = <t>(arr: Array<t>): Array<t> => {
     return foldr<t, Array<t>>((value: t, accumulator: Array<t>): Array<t> => {
         const acc = accumulator;
