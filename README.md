@@ -10,3 +10,6 @@
 4. *Optional:* run `npm run build` to transpile the program to common JavaScript.
 
 ### Haskell 
+1. Follow the GHCup setup instructions https://www.haskell.org/ghcup/#
+2. Run `ghci haskell.lhs` to interpret the script
+3. Run the various functions of the haskell.lhs script from the GHCI interpreter
