@@ -35,3 +35,31 @@ Tests using numbers list with foldr and foldl
 
 > addedNumbersFoldl :: Int
 > addedNumbersFoldl = foldl_1 addTwo 0 numList
+
+> multNumbersFoldr :: Int
+> multNumbersFoldr = foldr_1 multTwo 1 numList
+
+> multNumbersFoldl :: Int
+> multNumbersFoldl = foldl_1 multTwo 1 numList
+
+
+Reversing list function definitions
+
+> reverseFoldr :: [a] -> [a]
+> reverseFoldr [] = []
+> reverseFoldr l = foldr_1 (\x xs -> xs ++ [x]) [] l
+
+> reverseFoldl :: [a] -> [a]
+> reverseFoldl [] = []
+> reverseFoldl l = foldl_1 (\acc x -> x : acc) [] l
+
+
+Reversing test lists with foldr
+
+> reverseNumListFoldr = reverseFoldr numList
+> reverseCharListFoldr = reverseFoldr charList
+
+Reversing test lists with foldl
+
+> reverseNumListFoldl = reverseFoldl numList
+> reverseCharListFoldl = reverseFoldl charList
