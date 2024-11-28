@@ -1,5 +1,5 @@
 # CIS623-Project
- This is the project for CIS623.
+This project converts the foldr and foldl functions from Haskell to TypeScript. This is my final project for CIS 623 at Syracuse University.
 
 ## Setup
 
