@@ -5,8 +5,8 @@ This project converts the foldr and foldl functions from Haskell to TypeScript. 
 
 ### JavaScript/TypeScript
 1. Install the latest version of Node.js https://nodejs.org/en.
-2. run `npm install` on this project.
-3. run `npm start` to run the application.
+2. run `npm install` in the terminal on this project.
+3. run `npm start` in the terminal to run the application.
 4. *Optional:* run `npm run build` to transpile the program to common JavaScript.
 
 ### Haskell 
